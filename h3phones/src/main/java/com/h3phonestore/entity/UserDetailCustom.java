@@ -7,15 +7,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@AllArgsConstructor
-@Getter
-@Setter
-@NoArgsConstructor
 public class UserDetailCustom implements UserDetails {
 
 	private static final long serialVersionUID = 1L;
@@ -54,6 +46,19 @@ public class UserDetailCustom implements UserDetails {
 	public boolean isEnabled() {
 
 		return true;
+	}
+
+	public UserDetailCustom(User user) {
+		super();
+		this.user = user;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 }

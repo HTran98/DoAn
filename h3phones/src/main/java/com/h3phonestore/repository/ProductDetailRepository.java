@@ -17,7 +17,7 @@ public interface ProductDetailRepository extends JpaRepository<ProductDetail, Lo
 	@Modifying
 	int deleteByDeleteFlag(boolean deleteFlag, Date updatedDate, String updatedBy, long productDetailId);
 
-	@Query("select pd from ProductDetail pd where pd.deleteFlag = ?1 and pd.productInfo.productId = ?2 group by pd.internalMemory order by created_date desc")
+	@Query("select pd from ProductDetail pd where pd.deleteFlag = ?1 and pd.productInfo.productId = ?2  order by created_date desc")
 	Optional<List<ProductDetail>> findByDeleteFlagAndProduct(boolean deleteFlag, long productId);
 	
 	Optional<List<ProductDetail>> findByDeleteFlagOrderByCreatedDateDesc(boolean deleteFlag);

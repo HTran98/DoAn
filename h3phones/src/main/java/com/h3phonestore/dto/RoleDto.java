@@ -3,11 +3,6 @@ package com.h3phonestore.dto;
 import java.util.Date;
 import java.util.List;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 
 public class RoleDto {
 	private long roleId;

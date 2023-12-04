@@ -2,10 +2,6 @@ package com.h3phonestore.dto;
 
 import java.util.Date;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 
 public class CustomerContactDto {
 	

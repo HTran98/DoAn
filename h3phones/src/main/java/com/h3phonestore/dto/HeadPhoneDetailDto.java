@@ -5,10 +5,6 @@ import java.util.Date;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 
 public class HeadPhoneDetailDto {
 	private long headPhoneId;

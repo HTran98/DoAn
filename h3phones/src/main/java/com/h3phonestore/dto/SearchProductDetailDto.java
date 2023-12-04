@@ -2,11 +2,6 @@ package com.h3phonestore.dto;
 
 import java.util.ArrayList;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 
 public class SearchProductDetailDto {
 	private long brandId;

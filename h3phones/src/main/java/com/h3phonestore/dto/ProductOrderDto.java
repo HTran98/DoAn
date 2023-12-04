@@ -4,15 +4,7 @@ import java.util.Date;
 
 import com.h3phonestore.entity.Invoice;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
 public class ProductOrderDto {
 	private long orderId;
 

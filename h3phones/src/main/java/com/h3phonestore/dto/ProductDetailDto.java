@@ -5,11 +5,6 @@ import java.util.Date;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 
 public class ProductDetailDto {
 	private long productDetailId;
@@ -338,18 +333,18 @@ public class ProductDetailDto {
 	}
 	@Transient
 	public String imageOverviewUrl() {
-		return "/src/main/resources/static/images/imagesProduct/" + productInfo.getProductName() + "/" + imageOverview;
+		return "/images/imagesProduct/" + productInfo.getProductName() + "/" + imageOverview;
 	}
 	@Transient
 	public String imageUnderUrl() {
-		return "/src/main/resources/static/images/imagesProduct/" + productInfo.getProductName() + "/" + imageUnder;
+		return "/images/imagesProduct/" + productInfo.getProductName() + "/" + imageUnder;
 	}
 	@Transient
 	public String imageSideUrl() {
-		return "/src/main/resources/static/images/imagesProduct/" + productInfo.getProductName() + "/" + imageSide;
+		return "/images/imagesProduct/" + productInfo.getProductName() + "/" + imageSide;
 	}
 	@Transient
 	public String imageOtherUrl() {
-		return "/src/main/resources/static/images/imagesProduct/" + productInfo.getProductName() + "/" + imageOther;
+		return "/images/imagesProduct/" + productInfo.getProductName() + "/" + imageOther;
 	}
 }
